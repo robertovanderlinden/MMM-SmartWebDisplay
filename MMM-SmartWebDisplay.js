@@ -100,7 +100,7 @@ selectURL: function(direction) {
 },
 
 findRandomUrl: function() {
-    let randomUrl = Math.floor(Math.random() * self.url_list.length);
+    var randomUrl = Math.floor(Math.random() * self.url_list.length);
     if (randomUrl === previousUrl) {
     	return this.findRandomUrl();
 	}
