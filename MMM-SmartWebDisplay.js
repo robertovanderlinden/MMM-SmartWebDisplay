@@ -101,7 +101,7 @@ selectURL: function(direction) {
 
 findRandomUrl: function() {
     var randomUrl = Math.floor(Math.random() * self.url_list.length);
-    if (randomUrl === previousUrl) {
+    if (previousUrl !== undefined && randomUrl === previousUrl) {
     	return this.findRandomUrl();
 	}
 
