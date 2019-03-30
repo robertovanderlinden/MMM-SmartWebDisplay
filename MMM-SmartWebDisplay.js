@@ -92,7 +92,10 @@ selectURL: function(direction) {
 		}
 	}
 
-    var randomUrl = this.findRandomUrl();
+    var randomUrl = 0;
+	if (self.url_list.length > 0) {
+        randomUrl = this.findRandomUrl();
+    }
 	previousUrl = randomUrl;
 
     return self.url_list[randomUrl];
